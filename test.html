@@ -1,0 +1,330 @@
+<html>
+<head>
+<meta charset="utf-8"> 
+<style>
+    body{
+        background-color: #FFF;
+        font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+    }
+    .s_ipt{
+        display: inline-block;
+        vertical-align: top;
+        width: 538px;
+    }
+    #code:focus{
+        border:1px solid  #4791ff  !important;
+    }
+    .text_center{
+        text-align: center;
+        margin-bottom:0;
+    }
+    .layui-input-inline input{font-size: 17px;}
+    .gd-trade-list { }
+</style>
+<link rel="stylesheet" type="text/css" href="css/layui.css"/>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/layui.js"></script>
+<script>
+        var val_a,val_s,val_c,val_v;
+		$(document).ready(function(){
+        $(".menu_item_c").click(function(){
+            val_c =$(this).attr("val");
+            $(".menu_item_c").each(function (){
+                $(this).find("a").eq(0).removeAttr("style","color")
+            })
+            $(this).find("a").eq(0).css("color","orange")
+        })
+
+        $(".menu_item_v").click(function(){
+            val_v =$(this).attr("val");
+            $(".menu_item_v").each(function (){
+                $(this).find("a").eq(0).removeAttr("style","color")
+            })
+            $(this).find("a").eq(0).css("color","orange")
+        })
+
+        $(".menu_item_a").click(function(){
+            val_a =$(this).attr("val");
+            $(".menu_item_a").each(function (){
+                $(this).find("a").eq(0).removeAttr("style","color")
+            })
+            $(this).find("a").eq(0).css("color","orange")
+        })
+
+        $(".menu_item_s").click(function(){
+            val_s =$(this).attr("val");
+            $(".menu_item_s").each(function (){
+                $(this).find("a").eq(0).removeAttr("style","color")
+            })
+            $(this).find("a").eq(0).css("color","orange")
+        })
+
+
+        $("#button_c").click(function(){
+            $(".menu_item_c").each(function (){
+                $(this).find("a").eq(0).removeAttr("style","color")
+            })
+            val_c = "";
+        })
+
+        $("#button_v").click(function(){
+            $(".menu_item_v").each(function (){
+                $(this).find("a").eq(0).removeAttr("style","color")
+            })
+            val_v = "";
+        })
+
+        $("#button_a").click(function(){
+            $(".menu_item_a").each(function (){
+                $(this).find("a").eq(0).removeAttr("style","color")
+            })
+            val_a = "";
+        })
+
+    $("#s_category").mouseover(function(){
+        $("#sc").css("display","block")
+    })
+    $("#sc").mouseleave(function(){
+        $("#sc").css("display","none")
+    })
+    $("#s_variety").mouseover(function(){
+        $("#sv").css("display","block")
+    })
+    $("#sv").mouseleave(function(){
+        $("#sv").css("display","none")
+    })
+    $("#s_area").mouseover(function(){
+        $("#sa").css("display","block")
+    })
+    $("#sa").mouseleave(function(){
+        $("#sa").css("display","none")
+    })
+    $("#s_price").mouseover(function(){
+        $("#sp").css("display","block")
+    })
+    $("#sp").mouseleave(function(){
+        $("#sp").css("display","none")
+    })
+	})
+</script>
+</head>
+<body>
+<div class="gd-trade-filter">
+    <div class="gd-trade-v">
+        <form  action="" >
+            <!--<div class="layui-form-item">-->
+
+            <!--</div>-->
+            <div class="layui-form-item" style="margin: 0 500px">
+                <div class="layui-inline tit-box" style="width:61px;">
+                    <span class="s1 " style="font-size: 15px;" id="s_category">品名</span>
+					<img src="img/icon-top.png" alt="">
+                </div>
+                <div class="layui-inline tit-box1" style="width:61px">
+                    <span class="s2 " style="font-size: 15px;" id="s_variety">类别</span>
+					<img src="img/icon-top.png" alt="">
+                </div>
+                <div class="layui-inline tit-box2" style="width:61px">
+                    <span class="s3 " style="font-size: 15px;" id="s_area">产地</span>
+					<img src="img/icon-top.png" alt="">
+                </div>
+                <div class="layui-inline " style="width:61px">
+                    <span class="s4 " style="font-size: 15px;" id="s_price">价格</span>
+					
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div id="sc" style="display: none;" class="menu_c">
+    <div style="color:black;padding:5px;height: 35px"><span class="ic">品种</span><a class="layui-btn layui-btn-xs layui-btn-normal" style="float:right;" id="button_c">重置</a></div>
+    <div class="link-top"></div>
+    <div>
+        <span class="menu_item menu_item_c" val="category=聚乙烯"><a href="#" class="ic" >聚乙烯</a></span>
+		       <span class="menu_item menu_item_c" val="category=聚乙烯"><a href="#" class="ic" >聚乙烯</a></span>
+        <span class="menu_item menu_item_c" val="category=聚乙烯"><a href="#" class="ic" >聚乙烯</a></span>
+        <span class="menu_item menu_item_c" val="category=聚乙烯"><a href="#" class="ic" >聚乙烯</a></span>
+        <span class="menu_item menu_item_c" val="category=聚乙烯"><a href="#" class="ic" >聚乙烯</a></span>
+        <span class="menu_item menu_item_c" val="category=聚乙烯"><a href="#" class="ic" >聚乙烯</a></span>
+        <span class="menu_item menu_item_c" val="category=聚乙烯"><a href="#" class="ic" >聚乙烯</a></span>
+        <span class="menu_item menu_item_c" val="category=聚乙烯"><a href="#" class="ic" >聚乙烯</a></span>
+
+    </div>
+</div>
+
+<div id="sv" style="display: none;" class="menu_v">
+    <div style="color:black;padding:5px;height: 35px" class="ic"><span class="ic">类别</span><a class="layui-btn layui-btn-xs layui-btn-normal" style="float:right;" id="button_v">重置</a></div>
+    <div class="link-top"></div>
+    <div>
+        <span class="menu_item menu_item_v" val="variety=PP"><a href="#" class="ic" >PP</a></span>
+		        <span class="menu_item menu_item_v" val="variety=PP"><a href="#" class="ic" >PP</a></span>
+        <span class="menu_item menu_item_v" val="variety=PP"><a href="#" class="ic" >PP</a></span>
+        <span class="menu_item menu_item_v" val="variety=PP"><a href="#" class="ic" >PP</a></span>
+        <span class="menu_item menu_item_v" val="variety=PP"><a href="#" class="ic" >PP</a></span>
+        <span class="menu_item menu_item_v" val="variety=PP"><a href="#" class="ic" >PP</a></span>
+        <span class="menu_item menu_item_v" val="variety=PP"><a href="#" class="ic" >PP</a></span>
+        <span class="menu_item menu_item_v" val="variety=PP"><a href="#" class="ic" >PP</a></span>
+        <span class="menu_item menu_item_v" val="variety=PP"><a href="#" class="ic" >PP</a></span>
+
+    </div>
+</div>
+
+<div id="sa" style="display: none;" class="menu_a">
+    <div style="color:black;padding:5px;height: 35px" class="ic"><span class="ic">产地</span><a class="layui-btn layui-btn-xs layui-btn-normal" style="float:right;" id="button_a">重置</a></div>
+    <div class="link-top"></div>
+    <div>
+       
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+        <span class="menu_item menu_item_a" val="area=福联"><a href="#" class="ic" >福联</a></span>
+
+    </div>
+</div>
+
+<div id="sp" style="display: none;" class="menu_s">
+    <div>
+        <span class=" menu_item_s" val="order=1"   ><a href="#" class="ic"  style="color:orange" >单价从低到高</a></span>
+    </div>
+    <div>
+        <span class=" menu_item_s" val="order=2"><a href="#" class="ic" >单价从高到低</a></span>
+    </div>
+    <div>
+        <span class=" menu_item_s" val="order=3"><a href="#" class="ic" >总价从低到高</a></span>
+    </div>
+    <div>
+        <span class=" menu_item_s" val="order=4"><a href="#" class="ic" >总价从高到低</a></span>
+    </div>
+</div>
+<script type="text/javascript">
+	    $('.tit-box').mouseover(function(){
+			
+			// 箭头图片切换
+	  if($('.tit-box img').attr('src')=='img/icon-top.png'){
+	      $('.tit-box img').attr('src','img/icon-bottom.png');
+	  }else{
+	      $('.tit-box img').attr('src','img/icon-top.png');
+	  }
+	})
+	    $('.tit-box').mouseleave(function(){
+			
+			// 箭头图片切换
+	  if($('.tit-box img').attr('src')=='img/icon-top.png'){
+	      $('.tit-box img').attr('src','img/icon-bottom.png');
+	  }else{
+	      $('.tit-box img').attr('src','img/icon-top.png');
+	  }
+	})
+	// 
+	 $('.tit-box1').mouseover(function(){
+			
+			// 箭头图片切换
+	  if($('.tit-box1 img').attr('src')=='img/icon-top.png'){
+	      $('.tit-box1 img').attr('src','img/icon-bottom.png');
+	  }else{
+	      $('.tit-box1 img').attr('src','img/icon-top.png');
+	  }
+	})
+	    $('.tit-box1').mouseleave(function(){
+			
+			// 箭头图片切换
+	  if($('.tit-box1 img').attr('src')=='img/icon-top.png'){
+	      $('.tit-box1 img').attr('src','img/icon-bottom.png');
+	  }else{
+	      $('.tit-box1 img').attr('src','img/icon-top.png');
+	  }
+	})
+	// 
+	 $('.tit-box2').mouseover(function(){
+			
+			// 箭头图片切换
+	  if($('.tit-box2 img').attr('src')=='img/icon-top.png'){
+	      $('.tit-box2 img').attr('src','img/icon-bottom.png');
+	  }else{
+	      $('.tit-box2 img').attr('src','img/icon-top.png');
+	  }
+	})
+	    $('.tit-box2').mouseleave(function(){
+			
+			// 箭头图片切换
+	  if($('.tit-box2 img').attr('src')=='img/icon-top.png'){
+	      $('.tit-box2 img').attr('src','img/icon-bottom.png');
+	  }else{
+	      $('.tit-box2 img').attr('src','img/icon-top.png');
+	  }
+	})
+</script>
+</body>
+</html>
+<style>
+	.layui-inline span{
+		float: left;
+		display: block;
+	}
+	.layui-inline img{
+		float: left;
+		display: block;
+		width: 20px;
+		height: 20px;
+	}
+    .ic{
+        color:rgb(102, 102, 102)
+    }
+    .menu_c{
+        background-color: #FFF;
+        position: absolute;
+        top: 34px;
+        left: 500px;
+        width: 400px;
+        font-size: 15px;
+    }
+    .menu_v{
+        background-color: #FFF;
+        position: absolute;
+        top: 34px;
+        left: 500px;
+        width: 400px;
+        font-size: 15px;
+    }
+	.menu_item_c,.menu_item_v,.menu_item_a{
+		margin-right:20rpx;
+		margin-bottom:20px !important;
+	}
+    .menu_a{
+        background-color: #FFF;
+        position: absolute;
+        top: 34px;
+        left: 500px;
+        width: 400px;
+        font-size: 15px;
+    }
+    .menu_s{
+        background-color: #FFF;
+        position: absolute;
+        top: 0px;
+        left: 650px;
+        width: 120px;
+        font-size: 17px;
+    }
+    .menu_item{
+        float:left;
+        width:100px
+    }
+
+    .link-top {
+        width: 100%;
+        height: 1px;
+        border-top: solid #ACC0D8 1px;
+    }
+</style>
